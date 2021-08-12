@@ -1,1 +1,817 @@
-
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+  }
+  
+  a {
+    color: #628de9;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #628de9;
+    text-decoration: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+  #header {
+    z-index: 997;
+    transition: all 0.5s;
+    padding: 16px 0;
+    background: #1a2e40;
+  }
+  
+  #header  h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 10px 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  #header  h1 a, #header  h1 a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #header  h1 a span, #header  h1 a:hover span {
+    color: #628de9;
+  }
+  
+  #header  img {
+    padding: 0;
+    margin: 0;
+    max-height: 40px;
+  }
+  
+  /*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+  
+  .navbar {
+    padding: 0;
+  }
+  
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  
+  .navbar li {
+    position: relative;
+  }
+  
+  .navbar a, .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    font-size: 14px;
+    color: #adc7de;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+  
+  .navbar a i, .navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+  }
+  
+  .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+    color: #fff;
+  }
+  
+  /*--------------------------------------------------------------
+  # Hero Section
+  --------------------------------------------------------------*/
+  
+  #hero .caroussel-container {
+    overflow: hidden;
+    height: 650px;
+    width: 100%;
+    margin: auto;
+  }
+  #hero .caroussel {
+    width: 100%;
+    position: relative;
+    left: 0;
+    display: flex;
+  }
+  #hero .image {
+    display: inline-flex;
+    flex-direction: column;
+    margin: auto;
+    position: relative;
+    height: 650px;
+  }
+  #hero .image img {
+    height: 650px;
+  }
+  #hero .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 650px;
+    background-color: rgba(0, 0, 0, 0.541);
+    z-index: 0;
+  }
+  
+  #hero {
+    width: 100%;
+    padding: 0 0 0 0;
+    background: #000000;
+    background: linear-gradient(180deg, #000000 0%, #0e1011 35%, #242424 100%);
+  }
+  
+  #hero h1 {
+    margin: 0 0 15px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #d2e0ed;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  #hero .get-started-btn {
+    background: #000000;
+    display: inline-block;
+    padding: 6px 30px;
+    border-radius: 20px;
+    color: #fff;
+    transition: none;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    transition: 0.3s;
+  }
+  
+  #hero .get-started-btn:hover {
+    background: #628de9;
+  }
+  
+  #hero .centered {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  
+  #hero .lead {
+    color: #d2e0ed;
+  }
+  
+  @media (max-width: 991px) {
+    #hero .hero-img {
+      text-align: center;
+    }
+    #hero .hero-img img {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #hero {
+      -moz-text-align-last: center;
+      text-align-last: center;
+    }
+    #hero h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  
+    }
+  
+  
+  
+  /*--------------------------------------------------------------
+  # Sections General
+  --------------------------------------------------------------*/
+  section {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  
+  .section-bg {
+    background: linear-gradient(180deg, #e2e2e2 0%, rgb(189, 189, 189) 100%);
+  }
+  
+  .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+  }
+  
+  .section-title h2::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+  }
+  
+  .section-title h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #628de9;
+    bottom: 0;
+    left: calc(50% - 20px);
+  }
+  
+  .section-title p {
+    margin-bottom: 0;
+  }
+  
+  /*--------------------------------------------------------------
+  # About
+  --------------------------------------------------------------*/
+  .about .content {
+    padding: 30px 0;
+  }
+  
+  .about .content h3 {
+    font-weight: 700;
+    font-size: 34px;
+    color: #000000;
+  }
+  
+  .about .content p {
+    margin-bottom: 0;
+  }
+  
+  .about .content .icon-box {
+    margin-top: 25px;
+  }
+  
+  .about .content .icon-box h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px 0 10px 60px;
+    color: #000000;
+  }
+  
+  .about .content .icon-box h4 a {
+    color: #000000;
+    transition: 0.3s;
+  }
+  
+  .about .content .icon-box h4 a:hover {
+    color: #628de9;
+  }
+  
+  .about .content .icon-box i {
+    font-size: 48px;
+    float: left;
+    color: #628de9;
+  }
+  
+  .about .content .icon-box p {
+    font-size: 15px;
+    color: #848484;
+    margin-left: 60px;
+  }
+  
+  .about .image {
+    background: url("../img/about.jpg") center center no-repeat;
+    background-size: cover;
+    min-height: 400px;
+  }
+  
+  @media (max-width: 667px) {
+    .about .image img {
+      max-width: 100%;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Blogs $ Projects
+  --------------------------------------------------------------*/
+  .services {
+    padding-bottom: 40px;
+  }
+  
+  .services .card {
+    border: 0;
+    padding: 0 30px;
+    margin-bottom: 60px;
+    position: relative;
+    background: transparent;
+  }
+  
+  .services .card-img {
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    overflow: hidden;
+    z-index: 9;
+    border-radius: 0;
+  }
+  
+  .services .card-img img {
+    max-width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .services .card-body {
+    z-index: 10;
+    background: #fff;
+    border-top: 4px solid #fff;
+    padding: 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    margin-top: -60px;
+    transition: 0.3s;
+  }
+  
+  .services .card-title {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .services .card-title a {
+    color: #000000;
+    transition: 0.3s;
+  }
+  
+  .services .card-text {
+    color: #5e5e5e;
+  }
+  
+  .services .read-more a {
+    color: #777777;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    transition: 0.3s;
+  }
+  
+  .services .read-more a:hover {
+    color: #628de9;
+  }
+  
+  .services .card:hover img {
+    transform: scale(1.1);
+  }
+  
+  .services .card:hover .card-body {
+    border-color: #628de9;
+  }
+  
+  .services .card:hover .card-body .card-title a {
+    color: #628de9;
+  }
+  
+  
+  
+  
+  /*--------------------------------------------------------------
+  # Team
+  --------------------------------------------------------------*/
+  .team .member {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .team .member .pic {
+    margin-bottom: 15px;
+    overflow: hidden;
+    min-height: 260px;
+  }
+  
+  .team .member .pic img {
+    max-width: 100%;
+    border-radius: 20%;
+  }
+  
+  .team .member h4 {
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 18px;
+    color: #000000;
+  }
+  
+  .team .member span {
+    font-style: italic;
+    display: block;
+    font-size: 13px;
+  }
+  
+  .team .member .social {
+    margin-top: 15px;
+  }
+  
+  .team .member .social a {
+    color: #000000;
+    transition: 0.3s;
+  }
+  
+  .team .member .social a:hover {
+    color: #628de9;
+  }
+  
+  .team .member .social i {
+    font-size: 18px;
+    margin: 0 2px;
+  }
+  
+  /*--------------------------------------------------------------
+  # Pricing
+  --------------------------------------------------------------*/
+  .pricing .row {
+    padding-top: 40px;
+  }
+  
+  .pricing .box {
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+    background: #fff;
+    text-align: center;
+    position: relative;
+  }
+  
+  .pricing .featured-badge {
+    display: inline-block;
+    position: absolute;
+    top: -11px;
+    left: calc(50% - 49px);
+    background: #628de9;
+    color: #fff;
+    text-align: center;
+    line-height: 1;
+    border-radius: 50px;
+    padding: 4px 20px 5px 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  
+  .pricing h3 {
+    font-weight: 300;
+    margin-bottom: 15px;
+    font-size: 28px;
+  }
+  
+  .pricing h4 {
+    font-size: 46px;
+    color: #628de9;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 25px;
+  }
+  
+  .pricing h4 span {
+    color: #bababa;
+    font-size: 18px;
+    display: block;
+  }
+  
+  .pricing ul {
+    padding: 0;
+    list-style: none;
+    color: #999;
+    text-align: left;
+    line-height: 20px;
+  }
+  
+  .pricing ul li {
+    padding-bottom: 12px;
+  }
+  
+  .pricing ul i {
+    color: #628de9;
+    font-size: 18px;
+    padding-right: 4px;
+  }
+  
+  .pricing ul .na {
+    color: #ccc;
+  }
+  
+  .pricing ul .na i {
+    color: #ccc;
+  }
+  
+  .pricing ul .na span {
+    text-decoration: line-through;
+  }
+  
+  .pricing .get-started-btn {
+    background: #000000;
+    display: inline-block;
+    padding: 6px 30px;
+    border-radius: 20px;
+    color: #fff;
+    transition: none;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    transition: 0.3s;
+  }
+  
+  .pricing .get-started-btn:hover {
+    background: #628de9;
+  }
+  
+  .pricing .featured {
+    z-index: 10;
+    margin: -30px -5px 0 -5px;
+    border: 1px solid #628de9;
+  }
+  
+  .pricing .featured .get-started-btn {
+    background: #628de9;
+  }
+  
+  .pricing .featured .get-started-btn:hover {
+    background: #000000;
+  }
+  
+  @media (max-width: 992px) {
+    .pricing .box {
+      max-width: 60%;
+      margin: 0 auto 30px auto;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .pricing .box {
+      max-width: 80%;
+      margin: 0 auto 30px auto;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .pricing .box {
+      max-width: 100%;
+      margin: 0 auto 30px auto;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  #Newsletter signup
+  --------------------------------------------------------------*/
+  .nsc {
+  background-image: url("https://th.bing.com/th/id/R.aeb2eff28e8ed1faa79429ae580be15b?rik=Gg3IhMQUnQA4Cg&riu=http%3a%2f%2fwallpapercave.com%2fwp%2f8cEpZrx.jpg&ehk=BCO14isvXneFibn4JB6LfzX8gbu1qWpkLkhdAXc9utk%3d&risl=&pid=ImgRaw&r=0");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(255, 254, 253);
+  font-size: 14px;
+  position: relative;
+  padding:15px;
+  }
+  
+  .nsc .newsletter {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 30px;
+  
+  }
+  
+  .nsc .newsletter form {
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+   .nsc .newsletter form input[type="email"] {
+    border: 0;
+    padding: 4px 8px;
+    width: calc(100% - 100px);
+  }
+  
+   .nsc .newsletter form input[type="submit"] {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    bottom: 0;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 20px;
+    background: #628de9;
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 50px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+   .nsc .newsletter form input[type="submit"]:hover {
+    background: #3d6640;
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # Life in Zippy
+  --------------------------------------------------------------*/
+  
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    box-sizing:border-box;
+  }
+  
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .liz .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .liz .prev:hover, .liz .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  
+  /* Number text (1/3 etc) */
+  .liz .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .liz .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .liz .active, .liz .dot:hover {
+    background-color: #717171;
+  }
+  
+  
+  
+  /*--------------------------------------------------------------
+  # Contact
+  --------------------------------------------------------------*/
+  
+  
+  .map-responsive{
+    overflow:hidden;
+    padding-bottom:35%;
+    position:relative;
+    height:0;
+  }
+  
+  .map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }
+  .contact .php-email-form button[type="submit"] {
+    background: #628de9;
+    border: 0;
+    margin-top:50px;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+  }
+  
+  .contact .php-email-form button[type="submit"]:hover {
+    background: #2f5a29;
+  } 
+  
+  /*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+  #footer {
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+  }
+  
+  #footer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(26, 46, 64, 0.85);
+    z-index: 1;
+  }
+  
+  #footer .footer-top {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  #footer .footer-top h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  
+  #footer .footer-top p {
+    font-size: 15;
+    font-style: italic;
+    margin: 30px 0 0 0;
+    padding: 0;
+  }
+  
+  #footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+  
+  #footer .footer-top .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #284864;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  
+  
+  #footer .footer-top .social-links a:hover {
+    background: #628de9;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #footer .footer-bottom {
+    border-top: 1px solid #1a2e40;
+    z-index: 2;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
