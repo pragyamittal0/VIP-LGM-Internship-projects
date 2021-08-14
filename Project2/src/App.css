@@ -1,0 +1,59 @@
+.navbar {
+  background-image: linear-gradient(rgb(93, 14, 104), rgb(226, 204, 204)); ;
+  color: rgb(147, 245, 245);
+  padding:10px;
+  margin-bottom:10px;
+  }
+  
+  .navitems h2 {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 30px;
+  display:inline-block;
+  }
+  
+  .navitems button {
+    float:right;
+    margin-top:20px;
+    margin-right: 20px;
+    padding:10px;
+    width:190px;
+    background-color: rgb(147, 245, 245);
+    font-family: cursive;
+    font-size: 30px;
+    font-weight:bolder;
+    border:1px solid white;
+    border-radius:5px;
+   
+  }
+  
+  .fetchbtn:hover {
+    background-color:rgb(117, 153, 182); ;
+  }
+  
+  .main {
+    display:inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+  
+  }
+  
+  .avatar {
+    border-radius: 50%;
+  }
+  
+  .profile_cont {
+  
+    border-radius:10%;
+    background-image: linear-gradient( rgb(255, 233, 233) , rgb(110,23,71));
+    box-shadow: 5px black;
+    margin:20px;
+    padding:10px;
+    padding-left: 2px;
+    padding-right: 2px;
+    text-align: center;
+    transition: transform .2s; 
+  }
+  
+  .profile_cont:hover {
+    transform: scale(1.08);
+  }
